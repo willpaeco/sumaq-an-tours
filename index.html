@@ -3,233 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Turismo Huancavelica</title>
-
-  <!-- Estilos CSS -->
-  <style>
-    /* Reseteo básico de márgenes y paddings */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Estilo general del cuerpo */
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f8f8f8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Header: barra superior */
-    header {
-      background-color: #006633;
-      color: white;
-      padding: 20px 10%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    /* Título del header */
-    header h1 {
-      font-size: 1.8rem;
-      font-weight: bold;
-    }
-
-    /* Navegación */
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #ffcc00;
-    }
-
-    /* Sección Hero: imagen grande con texto */
-    .hero {
-      background-image: url('https://www.turismohuancavelica.com/images/banner.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 350px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-      font-size: 2rem;
-      font-weight: bold;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    /* Contenedor principal */
-    .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    /* Títulos de secciones */
-    h2.section-title {
-      color: #006633;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #006633;
-      padding-bottom: 5px;
-    }
-
-    /* Grid de destinos */
-    .destinos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-      gap: 20px;
-    }
-
-    /* Tarjeta individual de destino */
-    .destino-card {
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-
-    /* Efecto hover en tarjeta */
-    .destino-card:hover {
-      transform: scale(1.03);
-    }
-
-    /* Imagen en tarjeta */
-    .destino-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    /* Información en tarjeta */
-    .destino-card .info {
-      padding: 15px;
-    }
-
-    .destino-card .info h3 {
-      margin-bottom: 10px;
-      color: #006633;
-    }
-
-    .destino-card .info p {
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #006633;
-      color: white;
-      text-align: center;
-      padding: 20px 10%;
-      margin-top: 40px;
-    }
-
-    /* Responsive para navegación en móviles */
-    @media (max-width: 600px) {
-      nav {
-        margin-top: 15px;
-      }
-      nav a {
-        display: block;
-        margin: 10px 0 0 0;
-      }
-    }
-  </style>
+  <title>Sumaqñan Tours - Turismo en Perú</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-  <!-- Header con logo/título y menú -->
-  <header>
-    <h1>Turismo Huancavelica</h1>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#destinos">Destinos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Sumaq_n_sun.svg/120px-Sumaq_n_sun.svg.png" alt="Logo Sumaqñan Tours" />
+  <h1>SUMAQÑAN TOURS</h1>
+  <p>Vive la experiencia ancestral del Perú</p>
+</header>
 
-  <!-- Sección hero con imagen de fondo y texto -->
-  <section class="hero">
-    Descubre la belleza ancestral de Huancavelica
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#destinos">Destinos</a>
+  <a href="#tours">Tours</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+  <section id="inicio">
+    <h2>Bienvenidos a Sumaqñan Tours</h2>
+    <p>Somos una agencia especializada en tours culturales y arqueológicos por las huacas del Perú. Descubre con nosotros los secretos y la historia de nuestras ancestrales civilizaciones.</p>
   </section>
 
-  <!-- Contenedor principal para secciones -->
-  <main class="container">
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Contamos con guías expertos y un equipo comprometido en brindarte la mejor experiencia turística con respeto y autenticidad.</p>
+  </section>
 
-    <!-- Sección Destinos -->
-    <section id="destinos">
-      <h2 class="section-title">Destinos Destacados</h2>
+  <section id="destinos">
+    <h2>Destinos</h2>
 
-      <div class="destinos">
-
-        <article class="destino-card">
-          <img src="https://www.turismohuancavelica.com/images/destinos/1.jpg" alt="Laguna de Choclococha" />
-          <div class="info">
-            <h3>Laguna de Choclococha</h3>
-            <p>Un espejo de agua cristalina rodeado de paisajes naturales impresionantes.</p>
-          </div>
-        </article>
-
-        <article class="destino-card">
-          <img src="https://www.turismohuancavelica.com/images/destinos/2.jpg" alt="Santuario de Chonta" />
-          <div class="info">
-            <h3>Santuario de Chonta</h3>
-            <p>Un lugar sagrado con flora y fauna única, perfecto para amantes de la naturaleza.</p>
-          </div>
-        </article>
-
-        <article class="destino-card">
-          <img src="https://www.turismohuancavelica.com/images/destinos/3.jpg" alt="Baños Termales" />
-          <div class="info">
-            <h3>Baños Termales</h3>
-            <p>Relájate en aguas termales con propiedades medicinales.</p>
-          </div>
-        </article>
-
-        <article class="destino-card">
-          <img src="https://www.turismohuancavelica.com/images/destinos/4.jpg" alt="Plaza de Huancavelica" />
-          <div class="info">
-            <h3>Plaza de Huancavelica</h3>
-            <p>Disfruta de la arquitectura colonial y la cultura viva de la ciudad.</p>
-          </div>
-        </article>
-
+    <div class="destino">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Huaca_Pucllana_-_Lima_Peru_-_panoramio.jpg/320px-Huaca_Pucllana_-_Lima_Peru_-_panoramio.jpg" alt="Huaca Pucllana" />
+      <div>
+        <h3>Huaca Pucllana</h3>
+        <p>Una pirámide de adobe preincaica ubicada en el corazón de Lima, que representa la cultura Lima.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" style="margin-top: 50px;">
-      <h2 class="section-title">Contacto</h2>
-      <p>Para más información, escríbenos a:</p>
-      <p><strong>Email:</strong> info@turismohuancavelica.com</p>
-      <p><strong>Teléfono:</strong> +51 123 456 789</p>
-    </section>
+    <div class="destino">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Machu_Picchu_2015_07_-_panoramio.jpg/320px-Machu_Picchu_2015_07_-_panoramio.jpg" alt="Machu Picchu" />
+      <div>
+        <h3>Machu Picchu</h3>
+        <p>La ciudadela inca más famosa del mundo, maravilla del Perú y patrimonio de la humanidad.</p>
+      </div>
+    </div>
 
-  </main>
+    <div class="destino">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Chavín_de_Huántar.JPG/320px-Chavín_de_Huántar.JPG" alt="Chavín de Huántar" />
+      <div>
+        <h3>Chavín de Huántar</h3>
+        <p>Un sitio arqueológico emblemático que alberga la cultura chavín, con templos y esculturas milenarias.</p>
+      </div>
+    </div>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Turismo Huancavelica - Todos los derechos reservados
-  </footer>
+  </section>
+
+  <section id="tours">
+    <h2>Tours</h2>
+    <ul>
+      <li>Tour cultural a Huaca Pucllana - 3 horas</li>
+      <li>Tour a Machu Picchu con guía especializado - 1 día</li>
+      <li>Expedición arqueológica a Chavín de Huántar - 2 días</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: info@sumaqnantours.com</p>
+    <p>Teléfono: +51 123 456 789</p>
+    <p>Dirección: Calle Ficticia 123, Lima, Perú</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Sumaqñan Tours - Todos los derechos reservados</p>
+</footer>
 
 </body>
 </html>
