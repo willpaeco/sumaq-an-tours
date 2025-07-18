@@ -1,76 +1,65 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+  color: #333;
 }
-
 header {
-  background: #024731;
+  background-color: #004d40;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 1.5rem 1rem;
 }
-
-.logo {
-  width: 80px;
+header img {
+  max-width: 150px;
+  margin-bottom: 10px;
 }
-
 nav {
-  background: #f4f4f4;
-  text-align: center;
-  padding: 10px;
+  background: #00796b;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
 }
-
 nav a {
-  margin: 0 15px;
+  color: white;
   text-decoration: none;
-  color: #024731;
   font-weight: bold;
 }
-
-.hero {
-  background: url('images/huaca-pucllana.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+nav a:hover {
+  text-decoration: underline;
 }
-
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
 section {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
+  margin-bottom: 3rem;
 }
-
-section img {
-  width: 100%;
-  max-width: 600px;
-  margin: 10px 0;
-  border-radius: 5px;
+h2 {
+  color: #004d40;
+  border-bottom: 2px solid #00796b;
+  padding-bottom: 0.3rem;
 }
-
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.destino {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
 }
-
-form button {
-  background: #024731;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.destino img {
+  max-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
 }
-
+.destino div {
+  max-width: 650px;
+}
 footer {
-  background: #333;
+  background-color: #004d40;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
-Create style.css
