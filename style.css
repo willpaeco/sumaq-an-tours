@@ -50,28 +50,36 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-.huancavelica {
+.huancavelica-hero {
+  position: relative;
+  background-image: url("images/portada.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.huancavelica-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro translúcido */
+  padding: 40px;
   text-align: center;
-  margin-bottom: 40px;
+  border-radius: 10px;
 }
 
-.huancavelica-img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.huancavelica-hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
-.huancavelica h2 {
-  color: #004d3b;
-  margin-top: 15px;
+.huancavelica-hero p {
+  font-size: 1.5em;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.huancavelica p {
-  font-size: 1.1em;
-  color: #333;
-}
 
 main {
   padding: 20px;
