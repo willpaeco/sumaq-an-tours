@@ -50,6 +50,28 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+.huancavelica {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.huancavelica-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.huancavelica h2 {
+  color: #004d3b;
+  margin-top: 15px;
+}
+
+.huancavelica p {
+  font-size: 1.1em;
+  color: #333;
+}
 
 main {
   padding: 20px;
